@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Budmo";
+  src: url("/budmo jiggler.otf") format("opentype");
+  font-display: swap;
+}
+
+:root {
+  --paper: #fbf8f1;
+  --ivory: #f6f1e7;
+  --sand: #efe6d4;
+  --pine: #2a3b3b;
+  --pine-deep: #1b2827;
+  --teal: #689a9b;
+  --gold: #b8894a;
+  --gold-light: #d9b779;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: var(--ivory);
+    color: var(--pine);
+    font-family: var(--font-sans), system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Lenis smooth scroll */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--paper);
+  }
+
+  /* Slim editorial scrollbar */
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--ivory);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cdbfa3;
+    border-radius: 999px;
+    border: 2px solid var(--ivory);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--gold);
+  }
+
+}
+
+@layer components {
+  .edge {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 5vw, 5rem);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+
+  /* Animated link underline */
+  .link-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Hero display kerning */
+  .display {
+    font-family: var(--font-display), Georgia, serif;
+    font-weight: 400;
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+  }
+
+  /* original brand display face — "Budmo" / the pastry event font */
+  .special-font {
+    font-family: "Budmo", var(--font-display), serif;
+    letter-spacing: 0.04em;
+  }
+
+  /* gold ink gradient text */
+  .ink-gold {
+    background: linear-gradient(95deg, #9a6e34 0%, #d9b779 45%, #b8894a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* faint film grain overlay */
+  .grain::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* skip rendering work for off-screen sections — big scroll win on long pages */
+  .cv {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+
+  .hairline {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(42, 59, 59, 0.25) 12%,
+      rgba(42, 59, 59, 0.25) 88%,
+      transparent
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
