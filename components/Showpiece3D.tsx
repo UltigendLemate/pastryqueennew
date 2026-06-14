@@ -15,7 +15,7 @@ const isMobile =
   typeof window !== "undefined" &&
   window.matchMedia("(max-width: 768px)").matches;
 
-/** Small gold elements that orbit the showpiece — the "dance of birds". */
+/** Small gold elements that orbit the showpiece - the "dance of birds". */
 function Orbiters() {
   const group = useRef<THREE.Group>(null);
   const seeds = useMemo(
@@ -93,7 +93,7 @@ export default function Showpiece3D() {
   const wrap = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(true);
 
-  // Pause the entire render loop when the hero is off-screen — no GPU work
+  // Pause the entire render loop when the hero is off-screen - no GPU work
   // while the rest of the (long) page is scrolled.
   useEffect(() => {
     const el = wrap.current;

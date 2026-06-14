@@ -21,11 +21,10 @@ export default function Organisers() {
           </h2>
           <Reveal delay={0.1} className="max-w-sm">
             <p className="text-pine/70">
-              Pastry Queen India is organised by{" "}
-              <span className="font-semibold text-pine">Bakery Review</span> and
-              staged within{" "}
-              <span className="font-semibold text-pine">IHE Expo 2026</span> — two
-              names at the heart of India’s baking and hospitality trade.
+              Pastry Queen India is co-organised by{" "}
+              <span className="font-semibold text-pine">Bakery Review</span> and{" "}
+              <span className="font-semibold text-pine">IHE Expo 2026</span> - two
+              partners at the heart of India’s baking and hospitality industry.
             </p>
           </Reveal>
         </div>
@@ -54,6 +53,16 @@ export default function Organisers() {
                 </div>
                 <div className="eyebrow mt-2 text-pine/45">{o.by}</div>
                 <p className="mt-5 text-pretty leading-relaxed text-pine/75">{o.text}</p>
+                {"stats" in o && o.stats && (
+                  <div className="mt-auto grid grid-cols-3 gap-4 border-t border-pine/10 pt-6">
+                    {o.stats.map((s) => (
+                      <div key={s.l}>
+                        <div className="display text-2xl leading-none text-pine">{s.v}</div>
+                        <div className="eyebrow mt-2 text-[0.58rem] text-pine/45">{s.l}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </a>
             </Reveal>
           ))}

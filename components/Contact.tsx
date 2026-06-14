@@ -35,7 +35,7 @@ export default function Contact() {
   return (
     <section id="contact" className="cv bg-paper py-24 md:py-32">
       <div className="edge grid grid-cols-1 gap-14 md:grid-cols-2 md:gap-20">
-        {/* Left — invitation + coordinates */}
+        {/* Left - invitation + coordinates */}
         <div>
           <div className="mb-6 flex items-center gap-4">
             <span className="eyebrow text-gold-deep">Contact</span>
@@ -51,7 +51,7 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-md leading-relaxed text-pine/70">
               Questions about eligibility, the brief or sponsorship? Reach the team
-              directly — we reply within two working days.
+              directly - we reply within two working days.
             </p>
           </Reveal>
 
@@ -91,7 +91,7 @@ export default function Contact() {
           </Reveal>
         </div>
 
-        {/* Right — form */}
+        {/* Right - form */}
         <Reveal delay={0.15}>
           <form ref={form} onSubmit={send} className="md:pt-4">
             <div className="space-y-7">
@@ -118,12 +118,12 @@ export default function Contact() {
 
             {status === "error" && (
               <p className="mt-4 text-sm text-gold-deep">
-                Something went wrong — please email us directly at {CONTACT.emails[0]}.
+                Something went wrong - please email us directly at {CONTACT.emails[0]}.
               </p>
             )}
             {status === "sent" && (
               <p className="mt-4 text-sm text-teal-deep">
-                Thank you — we’ll be in touch within two working days.
+                Thank you - we’ll be in touch within two working days.
               </p>
             )}
           </form>

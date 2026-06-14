@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="italic ink-gold">India</span> 2026
             </h2>
             <p className="mt-5 max-w-sm text-paper/65">
-              {SITE.tagline} Theme — “{SITE.theme}.”
+              {SITE.tagline} Theme - “{SITE.theme}.”
             </p>
           </div>
 
@@ -57,9 +57,9 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-4 border-t border-paper/10 py-8 text-sm text-paper/50 md:flex-row md:items-center">
           <span>© {SITE.year} Pastry Queen India · Organised by {SITE.organisedBy}</span>
           <span className="flex items-center gap-2">
-            National selection for {SITE.worldCup}
+            {SITE.theme}
             <span className="text-gold-light">✦</span>
-            {SITE.worldCupVenue}
+            {SITE.city}
           </span>
         </div>
       </div>

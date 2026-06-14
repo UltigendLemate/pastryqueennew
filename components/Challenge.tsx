@@ -51,7 +51,7 @@ export default function Challenge() {
             <span className="eyebrow text-gold-light">The Challenge</span>
             <span className="h-px w-12 bg-paper/25" />
           </div>
-          <span className="eyebrow text-paper/50">01 — 0{CHALLENGE.length}</span>
+          <span className="eyebrow text-paper/50">01 - 0{CHALLENGE.length}</span>
         </div>
 
         {/* horizontal track */}
@@ -71,7 +71,7 @@ export default function Challenge() {
                 Judged live.
               </h2>
               <p className="mt-6 max-w-sm text-paper/70">
-                Each competitor executes a complete buffet before the jury — from a
+                Each competitor executes a complete buffet before the jury - from a
                 towering showpiece to the smallest viennoiserie. Scroll to meet the
                 five.
               </p>

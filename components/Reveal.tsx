@@ -61,7 +61,12 @@ export function Words({
       {words.map((w, i) => (
         <span
           key={i}
-          style={{ display: "inline-block", overflow: "hidden", verticalAlign: "top" }}
+          style={{
+            display: "inline-block",
+            overflow: "hidden",
+            verticalAlign: "top",
+            paddingBottom: "0.2em",
+          }}
         >
           <motion.span
             style={{ display: "inline-block", willChange: "transform" }}

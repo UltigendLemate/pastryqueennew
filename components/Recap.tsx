@@ -36,7 +36,7 @@ export default function Recap() {
           </h2>
           <Reveal delay={0.1} className="max-w-xs">
             <p className="text-pine/70">
-              A two-day celebration of craft, nerves and artistry — captured in the
+              A two-day celebration of craft, nerves and artistry - captured in the
               official Pastry Queen India 2024 film.
             </p>
           </Reveal>
@@ -54,7 +54,7 @@ export default function Recap() {
               <span className="h-2.5 w-2.5 rounded-full bg-teal/60" />
               <span className="h-2.5 w-2.5 rounded-full bg-paper/30" />
               <span className="ml-3 text-xs tracking-wide text-paper/60">
-                Pastry Queen India 2024 — Official Recap
+                Pastry Queen India 2024 - Official Recap
               </span>
             </div>
             <div className="relative aspect-video w-full">

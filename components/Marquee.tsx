@@ -3,9 +3,9 @@
 const ITEMS = [
   "The Dance of Birds",
   "Pastry Queen India 2026",
-  "5 — 6 August",
+  "5 - 6 August",
   "India Expo Centre · Greater Noida",
-  "National Selection",
+  "India’s Finest Pastry Chefs",
 ];
 
 function Row() {

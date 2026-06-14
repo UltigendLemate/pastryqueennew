@@ -31,7 +31,7 @@ export default function Nav() {
         <nav className="edge flex items-center justify-between gap-6">
           <a
             href="#top"
-            aria-label="Pastry Queen India — home"
+            aria-label="Pastry Queen India - home"
             className="flex items-center leading-none"
           >
             <img

@@ -71,7 +71,7 @@ export default function Story() {
             <Reveal>
               <p className="text-lg leading-relaxed text-pine/85">
                 Now in its fifth edition, Pastry Queen India is a professional
-                proving ground for elite international competition — high-stakes
+                proving ground for the country’s finest - high-stakes
                 craft staged alongside a showcase of the next generation of women
                 pastry chefs. Organised by{" "}
                 <span className="font-semibold text-pine">Bakery Review</span> at
@@ -85,16 +85,15 @@ export default function Story() {
                 This year’s theme,{" "}
                 <span className="italic text-pine">“The Dance of Birds,”</span> asks
                 competitors to translate the elegance and rhythm of nature into
-                technical mastery — and offers the champion a passage to the world
-                stage.
+                technical mastery.
               </p>
             </Reveal>
 
             <Reveal delay={0.2}>
               <blockquote className="mt-10 border-l-2 border-gold pl-6">
                 <p className="font-display text-2xl italic leading-snug text-pine md:text-3xl">
-                  “Passion, creativity, collaboration — and a place on the world
-                  stage.”
+                  “Passion, creativity, collaboration - and a national stage to
+                  prove it.”
                 </p>
               </blockquote>
             </Reveal>

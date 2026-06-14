@@ -61,17 +61,19 @@ export default function Participants() {
                     className="object-cover object-top transition-transform duration-[1.1s] ease-editorial group-hover:scale-[1.05]"
                     style={{ filter: "saturate(0.9) contrast(1.03)" }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pine-deep/92 via-pine-deep/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-pine-deep via-pine-deep/55 via-40% to-transparent to-75%" />
 
                   {/* institute logo chip */}
-                  <div className="absolute left-3 top-3 flex h-12 w-12 items-center justify-center rounded-lg bg-white/95 p-1.5 shadow-md ring-1 ring-pine/5">
-                    <img
-                      src={p.logo}
-                      alt={p.team}
-                      loading="lazy"
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
+                  {p.logo && (
+                    <div className="absolute left-3 top-3 flex h-12 w-12 items-center justify-center rounded-lg bg-white/95 p-1.5 shadow-md ring-1 ring-pine/5">
+                      <img
+                        src={p.logo}
+                        alt={p.team}
+                        loading="lazy"
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  )}
 
                   {/* open affordance */}
                   <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-paper/40 text-paper opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
@@ -79,8 +81,8 @@ export default function Participants() {
                   </span>
 
                   <div className="absolute inset-x-0 bottom-0 p-4">
-                    <div className="eyebrow text-[0.6rem] text-gold-light/90">{p.team}</div>
-                    <div className="display mt-1 text-xl leading-tight text-paper">{p.name}</div>
+                    <div className="eyebrow text-[0.6rem] text-gold-light [text-shadow:0_1px_8px_rgba(11,17,16,0.65)]">{p.team}</div>
+                    <div className="display mt-1 text-xl leading-tight text-paper [text-shadow:0_1px_10px_rgba(11,17,16,0.7)]">{p.name}</div>
                   </div>
                 </div>
               </button>
@@ -120,13 +122,15 @@ export default function Participants() {
               </div>
               <div className="overflow-y-auto p-7 sm:col-span-3 md:p-9">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-pine/10 bg-white p-2">
-                    <img
-                      src={chef.logo}
-                      alt={chef.team}
-                      className="max-h-full max-w-full object-contain"
-                    />
-                  </div>
+                  {chef.logo && (
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-pine/10 bg-white p-2">
+                      <img
+                        src={chef.logo}
+                        alt={chef.team}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  )}
                   <div className="eyebrow text-gold-deep">{chef.team}</div>
                 </div>
                 <h3 className="display mt-5 text-3xl text-pine md:text-4xl">{chef.name}</h3>
