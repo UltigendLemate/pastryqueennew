@@ -51,7 +51,7 @@ export default function Contact() {
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-md leading-relaxed text-pine/70">
               Questions about eligibility, the brief or sponsorship? Reach the team
-              directly - we reply within two working days.
+              directly - we reply within 2 hours.
             </p>
           </Reveal>
 
@@ -123,7 +123,7 @@ export default function Contact() {
             )}
             {status === "sent" && (
               <p className="mt-4 text-sm text-teal-deep">
-                Thank you - we’ll be in touch within two working days.
+                Thank you - we’ll be in touch within 2 hours.
               </p>
             )}
           </form>

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: "Pastry Queen India 2026 - The Dance of Birds",
   description:
     "The 5th edition of Pastry Queen India - the national stage for India's finest women pastry chefs. 5–6 August 2026, India Expo Centre & Mart, Greater Noida.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: [{ url: "/favicon.png", type: "image/png" }, { url: "/favicon.ico" }], apple: "/favicon.png" },
   openGraph: {
     title: "Pastry Queen India 2026 - The Dance of Birds",
     description:

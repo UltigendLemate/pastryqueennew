@@ -67,21 +67,23 @@ export default function Hero() {
         style={{ y, opacity }}
         className="edge pointer-events-none relative z-10 flex min-h-[100svh] flex-col pb-12 pt-28 md:pb-14 md:pt-32"
       >
-        {/* ── sponsors — refined inline strip, top ── */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.1 }}
-          className="pointer-events-auto flex flex-wrap items-center gap-x-6 gap-y-3"
-        >
-          <span className="eyebrow text-pine/40">Presented&nbsp;by</span>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/pp/elle.png" alt="Title sponsor" className="h-7 w-auto object-contain mix-blend-multiply" />
-          <span className="hidden h-5 w-px bg-pine/20 sm:block" />
-          <span className="eyebrow text-pine/40">In&nbsp;association&nbsp;with</span>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/sponsors/cranberry.png" alt="Diamond sponsor" className="h-7 w-auto object-contain mix-blend-multiply" />
-        </motion.div>
+        {/* ── Title / diamond sponsor lockup — hidden for now; returns once sponsors are confirmed ── */}
+        {false && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.1 }}
+            className="pointer-events-auto flex flex-wrap items-center gap-x-6 gap-y-3"
+          >
+            <span className="eyebrow text-pine/40">Presented&nbsp;by</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/pp/elle.png" alt="Title sponsor" className="h-7 w-auto object-contain mix-blend-multiply" />
+            <span className="hidden h-5 w-px bg-pine/20 sm:block" />
+            <span className="eyebrow text-pine/40">In&nbsp;association&nbsp;with</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/sponsors/cranberry.png" alt="Diamond sponsor" className="h-7 w-auto object-contain mix-blend-multiply" />
+          </motion.div>
+        )}
 
         {/* ── masthead — vertically centred ── */}
         <div className="my-auto max-w-[44rem]">

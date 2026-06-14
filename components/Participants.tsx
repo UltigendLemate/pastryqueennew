@@ -39,51 +39,49 @@ export default function Participants() {
           </h2>
           <Reveal delay={0.1} className="max-w-xs">
             <p className="text-pine/70">
-              Each chef represents their institution. Tap any chef to read their
-              story.
+              Each chef represents their institution. Tap any chef to read their full story.
             </p>
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
+        {/* editorial split: photo + a panel that highlights the institute logo */}
+        <div className="grid gap-5 md:grid-cols-2">
           {PARTICIPANTS.map((p, i) => (
-            <Reveal key={p.name} delay={(i % 4) * 0.06}>
+            <Reveal key={p.name} delay={(i % 2) * 0.08}>
               <button
                 onClick={() => setActive(i)}
-                className="group relative block w-full overflow-hidden rounded-xl bg-gradient-to-b from-bisque to-sand text-left"
+                className="group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-pine/10 bg-white text-left transition-all duration-500 ease-editorial hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_28px_60px_-32px_rgba(42,59,59,0.45)] sm:flex-row"
               >
-                <div className="relative aspect-[3/4] w-full">
+                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-gradient-to-b from-bisque to-sand sm:aspect-auto sm:w-[42%]">
                   <Image
                     src={p.img}
                     alt={p.name}
                     fill
-                    sizes="(max-width: 768px) 45vw, 24vw"
-                    className="object-cover object-top transition-transform duration-[1.1s] ease-editorial group-hover:scale-[1.05]"
-                    style={{ filter: "saturate(0.9) contrast(1.03)" }}
+                    sizes="(max-width: 640px) 100vw, 28vw"
+                    className="object-cover object-top transition-transform duration-[1.1s] ease-editorial group-hover:scale-[1.04]"
+                    style={{ filter: "saturate(0.92) contrast(1.03)" }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pine-deep via-pine-deep/55 via-40% to-transparent to-75%" />
+                </div>
 
-                  {/* institute logo chip */}
-                  {p.logo && (
-                    <div className="absolute left-3 top-3 flex h-12 w-12 items-center justify-center rounded-lg bg-white/95 p-1.5 shadow-md ring-1 ring-pine/5">
-                      <img
-                        src={p.logo}
-                        alt={p.team}
-                        loading="lazy"
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                  )}
-
-                  {/* open affordance */}
-                  <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-paper/40 text-paper opacity-0 backdrop-blur-sm transition-all duration-300 group-hover:opacity-100">
-                    +
-                  </span>
-
-                  <div className="absolute inset-x-0 bottom-0 p-4">
-                    <div className="eyebrow text-[0.6rem] text-gold-light [text-shadow:0_1px_8px_rgba(11,17,16,0.65)]">{p.team}</div>
-                    <div className="display mt-1 text-xl leading-tight text-paper [text-shadow:0_1px_10px_rgba(11,17,16,0.7)]">{p.name}</div>
+                <div className="flex flex-1 flex-col justify-center gap-3.5 p-6 md:p-7">
+                  {/* enlarged, highlighted institute logo */}
+                  <div className="flex h-14 items-center md:h-16">
+                    <img
+                      src={p.logo}
+                      alt={p.team}
+                      loading="lazy"
+                      className="max-h-full max-w-[64%] object-contain"
+                    />
                   </div>
+                  <div>
+                    <div className="eyebrow text-gold-deep">{p.team}</div>
+                    <div className="display mt-1 text-2xl leading-tight text-pine md:text-[1.7rem]">{p.name}</div>
+                  </div>
+                  <p className="line-clamp-2 text-sm leading-relaxed text-pine/55 md:line-clamp-3">{p.bio}</p>
+                  <span className="mt-0.5 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-gold-deep">
+                    Read story
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </span>
                 </div>
               </button>
             </Reveal>
@@ -91,7 +89,7 @@ export default function Participants() {
         </div>
       </div>
 
-      {/* bio popup */}
+      {/* full-bio dialog */}
       <AnimatePresence>
         {chef && (
           <motion.div
@@ -121,9 +119,9 @@ export default function Participants() {
                 />
               </div>
               <div className="overflow-y-auto p-7 sm:col-span-3 md:p-9">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-4">
                   {chef.logo && (
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border border-pine/10 bg-white p-2">
+                    <div className="flex h-16 w-20 shrink-0 items-center justify-center rounded-lg border border-pine/10 bg-white p-2.5">
                       <img
                         src={chef.logo}
                         alt={chef.team}

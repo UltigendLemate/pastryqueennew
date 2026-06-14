@@ -18,7 +18,8 @@ export const SITE = {
   recapEmbed: "https://www.youtube.com/embed/6qsrNp3FZ8s?si=lp5xqucw3aUcPdQP&rel=0",
   rulesUrl:
     "https://drive.google.com/drive/folders/15Pc6R4wpeylzuwjMGVnVL3nlP7bXsgH0?usp=sharing",
-  registerPdf: "/register.pdf",
+  // "Apply" → application form + rules on Google Drive (local PDFs retired)
+  registerPdf: "https://drive.google.com/drive/folders/15Pc6R4wpeylzuwjMGVnVL3nlP7bXsgH0?usp=sharing",
   visitorUrl: "https://ihexpo.com/visitor-registration/",
 } as const;
 
@@ -187,8 +188,8 @@ export const PARTICIPANTS = [
   },
   {
     name: "Tisha Nair",
-    team: "Academy of Pastry & Culinary Arts",
-    logo: "/images/pi/apcalogo.png",
+    team: "Ecole Ducasse ISH, Gurugram",
+    logo: "/images/pi/ishlogo.jpeg",
     img: "/contestants/tisha.jpg",
     bio: "A trained pastry chef with experience in bakery, dessert production, showpieces and competition work. Trained at the Academy of Pastry & Culinary Arts, she has worked with The Sugar Project and the Indian School of Hospitality. A multiple ICC medallist, she won Best Glass Dessert at the Junior Pastry Cup 2025.",
   },
@@ -201,16 +202,58 @@ export const PARTICIPANTS = [
   },
 ];
 
-// Partners & sponsors (logos + sites).
+// Partners & sponsors — logo, website link, short tag, and an "about" blurb
+// (shown when a sponsor is opened). Descriptions sourced from the original site.
 export const SPONSORS = [
-  { name: "MOD Kitchen Equipment", logo: "/sponsors/1.png", link: "https://www.modequipment.com/", tag: "Commercial kitchen solutions" },
-  { name: "RANS Technocrats", logo: "/sponsors/2.png", link: "http://ransindia.com/", tag: "Foodservice equipment" },
-  { name: "IBCA", logo: "/sponsors/3.png", link: "https://www.chefibpa.com", tag: "Bakery & culinary institute" },
-  { name: "Windsor Chocolatier", logo: "/sponsors/wclogo.jpg", link: "https://www.windsorchocolatier.com", tag: "Artisanal chocolate" },
-  { name: "DKG Sales", logo: "/sponsors/dkg.png", link: "https://dkgspl.co/", tag: "Cutlery, crockery & equipment" },
+  {
+    name: "US Cranberries",
+    logo: "/sponsors/cranberry.png",
+    link: "https://www.uscranberries.com",
+    tag: "America’s Original Superfruit",
+    text: "The Cranberry Marketing Committee (CMC) promotes the use and consumption of US-grown cranberries across many countries including India. The CMC was established as a Federal Marketing Order in 1962 to ensure a stable, orderly supply of good quality product. Cranberries are not just any fruit – they are America’s Original Superfruit.® Cranberries are grown across the United States in leading production states of Wisconsin, Massachusetts, New Jersey, Oregon and Washington. They are a versatile, nutrient-dense fruit that can be easily incorporated into sweet and savoury dishes.",
+  },
+  {
+    name: "MOD Kitchen Equipment",
+    logo: "/sponsors/1.png",
+    link: "https://www.modequipment.com/",
+    tag: "Commercial kitchen solutions",
+    text: "MOD Kitchen Equipment Pvt. Ltd. is a leading provider of complete commercial kitchen and catering equipment solutions. Based in New Delhi, MOD specialises in turnkey kitchen projects for hotels, bakeries, coffee outlets, restaurants, institutions and industrial units across the country. A major India sales-and-service partner for OZTI of Turkey, MOD’s design team plans layouts that optimise space and operations, backed by ready spare-part stock and a customer-centric approach.",
+  },
+  {
+    name: "RANS Technocrats",
+    logo: "/sponsors/2.png",
+    link: "http://ransindia.com/",
+    tag: "Foodservice equipment",
+    text: "With 27 years of industry experience, RANS Technocrats is a renowned Indian manufacturer of kitchen equipment for the foodservice industry. Its specialised brands include ULTIMATE (baking ovens, salamanders, pizza ovens), ICEDEN (commercial refrigeration) and GRATEINOX (stainless-steel kitchen gratings), alongside customised equipment under the RANS brand — all built to international standards with dedicated nationwide service.",
+  },
+  {
+    name: "IBCA",
+    logo: "/sponsors/3.png",
+    link: "https://www.chefibpa.com",
+    tag: "Bakery & culinary institute",
+    text: "The Institute of Bakery & Culinary Arts (IBCA) is one of the foremost learning centres in the capital, nurturing future professionals in Bakery and Culinary Arts. Its structured courses guide students through methods, processes and recipe-building from scratch — turning newcomers into competition-ready professionals, and earning IBCA a leading reputation through its students’ international performance and placements.",
+  },
+  {
+    name: "Windsor Chocolatier",
+    logo: "/sponsors/wclogo.jpg",
+    link: "https://www.windsorchocolatier.com",
+    tag: "Artisanal chocolate",
+    text: "Windsor Chocolatier crafts batch-to-batch artisanal chocolates where craftsmanship meets exquisite, tailored flavours. Beyond chocolate it produces premium pure nut pastes, spreads, praline paste and candied orange peel for high-end bakeries, and offers private-labelling for national clients. The firm holds five Limca Book of Records and aims to become India’s largest premium chocolate company.",
+  },
+  {
+    name: "DKG Sales",
+    logo: "/sponsors/dkg.png",
+    link: "https://dkgspl.co/",
+    tag: "Cutlery, crockery & equipment",
+    text: "DKG Sales Private Limited, established in 1987 by Dilip Kumar Gandhi, is a premier Delhi-based manufacturer for the Indian hotel and restaurant industry. Specialising in high-quality cutlery, crockery, glassware and kitchen equipment, its state-of-the-art facility delivers premium quality, innovation and client-centric solutions that help chefs create exceptional culinary experiences.",
+  },
   // --- temporarily hidden (uncomment to restore) ---
-  // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy" },
-  // { name: "Delta Nutritives", logo: "/pp/deltasponsor.png", link: "https://www.deltanutritives.com/", tag: "Dessert ingredients & equipment" },
-  // { name: "Euro Foods", logo: "/sponsors/eurofoods.jpg", link: "https://eurofoods.co.in/import/", tag: "Premium ingredient imports" },
-  // { name: "Products & Ideas", logo: "/sponsors/5.png", link: "https://www.pi-india.com/", tag: "Kitchen & bakery imports" },
+  // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy",
+  //   text: "A brand of tradition and innovation, Elle & Vire Professionnel has catered to the finest chefs and emerging talents for over 75 years, showcasing excellence in dairy from Normandy. The consistency and performance of its creams and butters empower chefs in their pursuit of excellence." },
+  // { name: "Delta Nutritives", logo: "/pp/deltasponsor.png", link: "https://www.deltanutritives.com/", tag: "Dessert ingredients & equipment",
+  //   text: "One of India’s most reliable suppliers of dessert ingredients and ice-cream equipment — importing Callebaut chocolate, Mec3 ice-cream ingredients, Dirafrost and Ravifruit frozen fruit & purées, Dawn Foods fillings and Elle & Vire dairy, and manufacturing premixes, glazes and fillings for bakeries." },
+  // { name: "Euro Foods", logo: "/sponsors/eurofoods.jpg", link: "https://eurofoods.co.in/import/", tag: "Premium ingredient imports",
+  //   text: "Euro Foods Pvt Ltd is a premier importer and distributor supplying 5-star hotels, fine-dining restaurants, retail chains, caterers and bakeries with chocolates, bread pre-mixes, frozen fruits and fillings, bar syrups and canned products of the highest quality." },
+  // { name: "Products & Ideas", logo: "/sponsors/5.png", link: "https://www.pi-india.com/", tag: "Kitchen & bakery imports",
+  //   text: "Founded in 2009, Products & Ideas (India) Pvt Ltd is a premier importer of commercial kitchen and bakery equipment, representing brands such as SPAR, Stella, Merrychef, Convotherm, Lincoln and ITV — supplying ovens, mixers and refrigeration with superior shelf-life and reliability." },
 ];
