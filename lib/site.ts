@@ -170,6 +170,7 @@ export const PARTICIPANTS = [
     team: "Academy of Pastry & Culinary Arts",
     logo: "/images/pi/apcalogo.png",
     img: "/contestants/khushi.jpg",
+    bigLogo: true,
     bio: "An award-winning Assistant Pastry Chef and professional chocolatier at the Academy of Pastry & Culinary Arts, Gurgaon. Winner of the Junior Indian Pastry Cup, she represented India at the Juniores Pastry Cup in Rimini, Italy. Her expertise includes chocolate artistry, sugar displays, entremets and contemporary pastry techniques.",
   },
   {
@@ -177,6 +178,7 @@ export const PARTICIPANTS = [
     team: "UTM Delight, Bhopal",
     logo: "/contestants/utm-delight.png",
     img: "/contestants/manisha.jpg",
+    bigLogo: true,
     bio: "Founder of UTM Delight Baking & Culinary Academy, Bhopal, affiliated with City & Guilds. An internationally certified pastry chef, India Cake Award winner and AAHAR 2026 Silver Medallist, she brings over ten years of experience and has trained 5,000+ students across cakes, breads, pastry art and chocolate art.",
   },
   {
@@ -184,6 +186,7 @@ export const PARTICIPANTS = [
     team: "Le Cordon Bleu, Gurugram",
     logo: "/images/pi/lcblogo.png",
     img: "/contestants/praniti.jpg",
+    bigLogo: true,
     bio: "A pastry chef with a strong foundation in French patisserie and modern dessert creation. Trained at the Academy of Pastry & Culinary Arts, she has worked with Le Cordon Bleu Gurugram, La Meilleure and A Sunday in Paris. She was a semi-finalist in the French Pastry Competition 2025 and competed in India Pastry Queen 2024.",
   },
   {
@@ -191,6 +194,7 @@ export const PARTICIPANTS = [
     team: "Ecole Ducasse ISH, Gurugram",
     logo: "/images/pi/ishlogo.jpeg",
     img: "/contestants/tisha.jpg",
+    bigLogo: true,
     bio: "A trained pastry chef with experience in bakery, dessert production, showpieces and competition work. Trained at the Academy of Pastry & Culinary Arts, she has worked with The Sugar Project and the Indian School of Hospitality. A multiple ICC medallist, she won Best Glass Dessert at the Junior Pastry Cup 2025.",
   },
   {
@@ -198,6 +202,7 @@ export const PARTICIPANTS = [
     team: "JW Marriott, Kolkata",
     logo: "/images/pi/jwlogo.png",
     img: "/contestants/akankhya.jpg",
+    bigLogo: true,
     bio: "A Demi Chef de Partie with bakery and pastry experience at JW Marriott Kolkata, skilled in artisanal breads, pastries, cakes, cookies and desserts. She works across production, presentation, recipe execution and quality control, with training from IHM Bhubaneswar, The Park Hyderabad and Hotel Mayfair & Convention, Bhubaneswar.",
   },
   {
@@ -205,6 +210,7 @@ export const PARTICIPANTS = [
     team: "The Leela Palace, Bengaluru",
     logo: "/contestants/leela-bengaluru.jpg",
     img: "/contestants/shreya.jpg",
+    bigLogo: true,
     bio: "Junior Sous Chef - Pastry at The Leela Palace Bengaluru, with experience across The Leela Palace New Delhi and Jaipur, Le Cirque, Radisson Goa, Trident Agra and The Oberoi Udaivilas. A Gold Medallist of The Leela Leadership Development Program, she specialises in artisan pastry production, cakes, desserts, breads, confectionery, presentation and kitchen operations.",
   },
 ];

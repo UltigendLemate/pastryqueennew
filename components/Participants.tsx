@@ -65,12 +65,18 @@ export default function Participants() {
 
                 <div className="flex flex-1 flex-col justify-center gap-3.5 p-6 md:p-7">
                   {/* enlarged, highlighted institute logo */}
-                  <div className="flex h-14 items-center md:h-16">
+                  <div
+                    className={`flex items-center ${
+                      "bigLogo" in p && p.bigLogo ? "h-20 md:h-24" : "h-14 md:h-16"
+                    }`}
+                  >
                     <img
                       src={p.logo}
                       alt={p.team}
                       loading="lazy"
-                      className="max-h-full max-w-[64%] object-contain"
+                      className={`max-h-full object-contain ${
+                        "bigLogo" in p && p.bigLogo ? "max-w-[80%]" : "max-w-[64%]"
+                      }`}
                     />
                   </div>
                   <div>
