@@ -200,6 +200,13 @@ export const PARTICIPANTS = [
     img: "/contestants/akankhya.jpg",
     bio: "A Demi Chef de Partie with bakery and pastry experience at JW Marriott Kolkata, skilled in artisanal breads, pastries, cakes, cookies and desserts. She works across production, presentation, recipe execution and quality control, with training from IHM Bhubaneswar, The Park Hyderabad and Hotel Mayfair & Convention, Bhubaneswar.",
   },
+  {
+    name: "Shreya Neekhara",
+    team: "The Leela Palace, Bengaluru",
+    logo: "/contestants/leela-bengaluru.jpg",
+    img: "/contestants/shreya.jpg",
+    bio: "Junior Sous Chef - Pastry at The Leela Palace Bengaluru, with experience across The Leela Palace New Delhi and Jaipur, Le Cirque, Radisson Goa, Trident Agra and The Oberoi Udaivilas. A Gold Medallist of The Leela Leadership Development Program, she specialises in artisan pastry production, cakes, desserts, breads, confectionery, presentation and kitchen operations.",
+  },
 ];
 
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
