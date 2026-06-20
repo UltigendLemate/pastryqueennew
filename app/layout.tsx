@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Hanken_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -44,6 +45,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
         </SmoothScroll>
+        <Script id="hyperleap-chatbot" strategy="afterInteractive">
+          {`(function () {
+            window.userChatbotConfig = {
+              chatbotId: "6c6e41ee-23a8-4470-b0b6-5fa4a28eaaa1",
+              privateKey: "NmM2ZTQxZWUyM2E4NDQ3MGIwYjY1ZmE0YTI4ZWFhYTFfOTU1MA==",
+            };
+            var chatbotScript = document.createElement("script");
+            chatbotScript.src = "https://chatjs.hyperleap.ai/chatbot.min.js";
+            chatbotScript.async = true;
+            document.head.appendChild(chatbotScript);
+          })();`}
+        </Script>
       </body>
     </html>
   );
