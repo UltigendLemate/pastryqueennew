@@ -23,6 +23,7 @@ export default function Participants() {
   }, []);
 
   return (
+    <>
     <section id="participants" className="cv bg-ivory py-24 md:py-32">
       <div className="edge">
         <div className="mb-10 flex items-center gap-4">
@@ -52,7 +53,7 @@ export default function Participants() {
                 onClick={() => setActive(i)}
                 className="group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-pine/10 bg-white text-left transition-all duration-500 ease-editorial hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_28px_60px_-32px_rgba(42,59,59,0.45)] sm:flex-row"
               >
-                <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden bg-gradient-to-b from-bisque to-sand sm:aspect-auto sm:w-[42%]">
+                <div className="relative aspect-[4/5] w-full shrink-0 overflow-hidden bg-gradient-to-b from-bisque to-sand sm:aspect-auto sm:w-[42%]">
                   <Image
                     src={p.img}
                     alt={p.name}
@@ -94,8 +95,10 @@ export default function Participants() {
           ))}
         </div>
       </div>
+    </section>
 
-      {/* full-bio dialog */}
+      {/* full-bio dialog — sibling of the .cv section so its fixed overlay
+          anchors to the viewport (content-visibility makes .cv a containing block) */}
       <AnimatePresence>
         {chef && (
           <motion.div
@@ -152,6 +155,6 @@ export default function Participants() {
           </motion.div>
         )}
       </AnimatePresence>
-    </section>
+    </>
   );
 }
