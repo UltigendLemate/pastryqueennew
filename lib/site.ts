@@ -27,6 +27,7 @@ export const NAV = [
   { label: "The Event", href: "#story" },
   { label: "The Challenge", href: "#challenge" },
   { label: "The Chefs", href: "#participants" },
+  { label: "Jury", href: "#jury" },
   { label: "Organisers", href: "#organisers" },
   { label: "Sponsors", href: "#sponsors" },
   { label: "Contact", href: "#contact" },
@@ -215,9 +216,50 @@ export const PARTICIPANTS = [
   },
 ];
 
+// The jury — photo, name, a short role line, and a full bio (shown when opened).
+export const JURY = [
+  {
+    name: "Chef Avijit Ghosh",
+    role: "Pastry Chef & Mentor",
+    img: "/jury/avijit.jpg",
+    bio: "Chef Avijit Ghosh is a senior pastry professional with extensive leadership experience across The Oberoi, The Leela, SMOOR and Sarovar Hotels & Resorts. A former Corporate Pastry Chef at The Leela and Executive Pastry Chef at The Oberoi, New Delhi, he has led pastry innovation, retail dessert development, academy training and brand-level product excellence. He was Callebaut Chocolate Ambassador India from 2009 to 2017.",
+  },
+  {
+    name: "Dr. Balendra Singh",
+    role: "Director, Institute of Bakery & Culinary Arts",
+    img: "/jury/balendra.png",
+    bio: "Dr. Balendra Singh is Director of the Institute of Bakery & Culinary Arts, New Delhi, where he promotes skill-based bakery and pastry education for aspiring professionals. An IHM Dehradun graduate, he brings over 20 years of experience with leading hotels including Umaid Bhawan Palace, Grand Hyatt, Westin, JW Marriott, Pullman, Novotel, Taj Mahal New Delhi, and international cruise ships. His expertise covers pastry innovation, fine dining, banquets, and culinary training.",
+  },
+  {
+    name: "Dr. Parvinder Singh Bali",
+    role: "Director, School for European Pastry & Culinary Arts",
+    img: "/jury/parvinder.png",
+    bio: "Dr Chef Parvinder Singh Bali is Director of the School for European Pastry and Culinary Arts, with 30 years at Oberoi Hotels. At the Oberoi Centre for Learning and Development, he elevated culinary standards by blending classical techniques with modern innovation. A gold medalist from IHM Kolkata and CIA Pro Certification top scorer, he authored five cookbooks and represented India at WorldSkills Leipzig. His passion for mentoring shaped generations of chefs.",
+  },
+  {
+    name: "Mister Tikku",
+    role: "Food Content Creator",
+    img: "/jury/tikku.jpg",
+    bio: "Mister Tikku is a popular food content creator known for his engaging storytelling, authentic food reviews and strong connect with food lovers across India. With a digital community reaching millions and 5 lakh+ daily viewers, he has worked with brands including Samsung, KFC, McDonald’s, Coca-Cola, Swiggy and US Cranberries. He has been recognised multiple times as Food Influencer of the Year.",
+  },
+  {
+    name: "Sourish Bhattacharyya",
+    role: "Food Journalist & Author",
+    img: "/jury/sourish.jpg",
+    bio: "Sourish Bhattacharyya is a senior food journalist, consultant and co-author of The Bloomsbury Handbook of Indian Cuisine. With over 40 years in journalism, he has held senior editorial roles at IANS, Mail Today, HT City and The Indian Express. He is Senior Consultant at We The Chefs and has co-curated platforms including Tasting India Symposium, Asian Hawkers Market and Top Chef Awards.",
+  },
+];
+
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
 // (shown when a sponsor is opened). Descriptions sourced from the original site.
 export const SPONSORS = [
+  {
+    name: "Anupam Royals",
+    logo: "/sponsors/anupam_logo.jpg",
+    link: "https://www.anupamroyals.com/",
+    tag: "Banquet & catering products",
+    text: "Anupam Royals is India’s largest and specialized manufacturer of hotel, banquet, and catering products, including Ready-to-Use “Instant” Banquet Interiors, Buffet Counters, Chafing Dishes, Dining Furniture, and many other allied products. With a world-class manufacturing facility spread across 4 lakh sq. ft. in Haryana and an 87,500 sq. ft. display centre showcasing 17,500+ products in New Delhi, we have served 48,500+ customers across India and 18 countries. Over the last 25 years, our customers have reported booking growth of up to 400% and additional net profits exceeding ₹72,000 Crore.",
+  },
   {
     name: "US Cranberries",
     logo: "/sponsors/cranberry.png",

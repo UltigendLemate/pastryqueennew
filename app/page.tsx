@@ -5,6 +5,7 @@ import Challenge from "@/components/Challenge";
 import Recap from "@/components/Recap";
 import Gallery from "@/components/Gallery";
 import Participants from "@/components/Participants";
+import Jury from "@/components/Jury";
 import Details from "@/components/Details";
 import Apply from "@/components/Apply";
 import Organisers from "@/components/Organisers";
@@ -21,6 +22,7 @@ export default function Home() {
       <Recap />
       <Gallery />
       <Participants />
+      <Jury />
       <Details />
       <Apply />
       <Organisers />
