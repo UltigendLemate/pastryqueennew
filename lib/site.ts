@@ -169,10 +169,10 @@ export const PARTICIPANTS = [
   {
     name: "Khushi Kaushal",
     team: "Academy of Pastry & Culinary Arts",
-    logo: "/images/pi/apcalogo.png",
+    logo: "/images/pi/apcanewlogo.png",
     img: "/contestants/khushi.jpg",
     bigLogo: true,
-    bio: "An award-winning Assistant Pastry Chef and professional chocolatier at the Academy of Pastry & Culinary Arts, Gurgaon. Winner of the Junior Indian Pastry Cup, she represented India at the Juniores Pastry Cup in Rimini, Italy. Her expertise includes chocolate artistry, sugar displays, entremets and contemporary pastry techniques.",
+    bio: "Assistant Pastry Chef at APCA with over 2.5 years of experience. Winner of the Junior Pastry Indian Cup, she represented India at the Junior Pastry World Cup during SIGEP Italy 2026. Specialising in artisan chocolates, she previously worked with Taj Hotels, combining industry expertise with competition excellence.",
   },
   {
     name: "Manisha Yadav",
