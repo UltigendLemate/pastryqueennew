@@ -248,6 +248,18 @@ export const JURY = [
     img: "/jury/sourish.jpg",
     bio: "Sourish Bhattacharyya is a senior food journalist, consultant and co-author of The Bloomsbury Handbook of Indian Cuisine. With over 40 years in journalism, he has held senior editorial roles at IANS, Mail Today, HT City and The Indian Express. He is Senior Consultant at We The Chefs and has co-curated platforms including Tasting India Symposium, Asian Hawkers Market and Top Chef Awards.",
   },
+  {
+    name: "Chef Rakesh Sethi",
+    role: "Celebrity Chef · Radisson Hotel Group",
+    img: "/jury/rakesh.jpg",
+    bio: "Chef Rakesh Sethi is a National Tourism Award-winning celebrity chef and Corporate Executive Chef for Radisson Hotel Group, South Asia. One of the early chefs on Indian television, he hosted popular cookery shows including Mirch Masala, Tea-Time and Rasoi Ki Rani. He has cooked for Presidents of India and received honours including the Golden Chef Hat, Corporate Chef of the Year and Best Chef of India.",
+  },
+  {
+    name: "Ankit Sahni",
+    role: "Founder & CEO, The Hazelnut Factory",
+    img: "/jury/ankit.jpg",
+    bio: "Ankit Sahni is the Founder and CEO of The Hazelnut Factory, a premium café, specialty coffee, patisserie and artisanal mithai brand founded in 2019. Under his leadership, THF has expanded to 22 outlets across 10 cities, crossed ₹100 crore in annual revenue in FY 2025-26, and built a modern Indian dessert identity through premium mithai, gifting, retail products and specialty coffee.",
+  },
 ];
 
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
