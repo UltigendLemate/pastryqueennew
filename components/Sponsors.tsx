@@ -56,7 +56,11 @@ export default function Sponsors() {
                     src={sp.logo}
                     alt={sp.name}
                     loading="lazy"
-                    className="max-h-20 max-w-[78%] object-contain opacity-65 grayscale transition-all duration-500 ease-editorial group-hover:opacity-100 group-hover:grayscale-0"
+                    className={`object-contain opacity-65 grayscale transition-all duration-500 ease-editorial group-hover:opacity-100 group-hover:grayscale-0 ${
+                      sp.name === "Anupam Royals"
+                        ? "max-h-24 max-w-[90%]"
+                        : "max-h-20 max-w-[78%]"
+                    }`}
                   />
                 </div>
                 <div className="mt-5 flex items-end justify-between gap-3 border-t border-pine/10 pt-4">
