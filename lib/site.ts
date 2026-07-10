@@ -308,10 +308,10 @@ export const SPONSORS = [
     text: "Windsor Chocolatier crafts batch-to-batch artisanal chocolates where craftsmanship meets exquisite, tailored flavours. Beyond chocolate it produces premium pure nut pastes, spreads, praline paste and candied orange peel for high-end bakeries, and offers private-labelling for national clients. The firm holds five Limca Book of Records and aims to become India’s largest premium chocolate company.",
   },
   {
-    name: "DKG Sales",
+    name: "DKG Sales Pvt Ltd.",
     logo: "/sponsors/dkg.png",
     link: "https://dkgspl.co/",
-    tag: "Cutlery, crockery & equipment",
+    tag: "Commercial Kitchen Equipment",
     text: "DKG Sales Private Limited, established in 1987 by Dilip Kumar Gandhi, is a premier Delhi-based manufacturer for the Indian hotel and restaurant industry. Specialising in high-quality cutlery, crockery, glassware and kitchen equipment, its state-of-the-art facility delivers premium quality, innovation and client-centric solutions that help chefs create exceptional culinary experiences.",
   },
   // --- temporarily hidden (uncomment to restore) ---
