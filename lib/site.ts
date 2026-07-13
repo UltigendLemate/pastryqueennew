@@ -314,6 +314,13 @@ export const SPONSORS = [
     tag: "Commercial Kitchen Equipment",
     text: "DKG Sales Private Limited, established in 1987 by Dilip Kumar Gandhi, is a premier Delhi-based manufacturer for the Indian hotel and restaurant industry. Specialising in high-quality cutlery, crockery, glassware and kitchen equipment, its state-of-the-art facility delivers premium quality, innovation and client-centric solutions that help chefs create exceptional culinary experiences.",
   },
+  {
+    name: "Dr. Smith",
+    logo: "/sponsors/dr-smith.png",
+    link: "https://www.drsmith.in/",
+    tag: "Canned foods & HoReCa essentials",
+    text: "Dr. Smith is the HoReCa food brand of Kay Sons Oils Pvt. Ltd., offering canned vegetables, fruits, olives, mushrooms, sauces, purees, pastes, pasta, breadcrumbs and beverage syrups. Established on a distribution network built since 1999, the brand serves retail and professional kitchens through reliable sourcing, foodservice expertise, warehousing and regional distribution across North India, with convenient, ready-to-use products for chefs.",
+  },
   // --- temporarily hidden (uncomment to restore) ---
   // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy",
   //   text: "A brand of tradition and innovation, Elle & Vire Professionnel has catered to the finest chefs and emerging talents for over 75 years, showcasing excellence in dairy from Normandy. The consistency and performance of its creams and butters empower chefs in their pursuit of excellence." },
