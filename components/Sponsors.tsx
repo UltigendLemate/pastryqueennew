@@ -109,15 +109,17 @@ export default function Sponsors() {
 
               <p className="mt-6 max-h-[40vh] overflow-y-auto leading-relaxed text-pine/80">{s.text}</p>
 
-              <a
-                href={s.link}
-                target="_blank"
-                rel="noreferrer"
-                className="group mt-7 inline-flex items-center gap-2.5 rounded-full bg-pine px-7 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-gold-deep"
-              >
-                Visit website
-                <span className="transition-transform duration-300 group-hover:translate-x-0.5">↗</span>
-              </a>
+              {s.link && (
+                <a
+                  href={s.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group mt-7 inline-flex items-center gap-2.5 rounded-full bg-pine px-7 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-gold-deep"
+                >
+                  Visit website
+                  <span className="transition-transform duration-300 group-hover:translate-x-0.5">↗</span>
+                </a>
+              )}
 
               <button
                 onClick={() => setActive(null)}

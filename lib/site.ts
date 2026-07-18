@@ -321,6 +321,13 @@ export const SPONSORS = [
     tag: "Canned foods & HoReCa essentials",
     text: "Dr. Smith is the HoReCa food brand of Kay Sons Oils Pvt. Ltd., offering canned vegetables, fruits, olives, mushrooms, sauces, purees, pastes, pasta, breadcrumbs and beverage syrups. Established on a distribution network built since 1999, the brand serves retail and professional kitchens through reliable sourcing, foodservice expertise, warehousing and regional distribution across North India, with convenient, ready-to-use products for chefs.",
   },
+  {
+    name: "Kenford",
+    logo: "/sponsors/kenford.jpeg",
+    link: "https://kenford.in",
+    tag: "Polycarbonate & melamine food service",
+    text: "Since 2009, Kenford has been redefining food service with its premium range of food-grade polycarbonate and melamine products. Proudly made in India, the brand combines innovative design, exceptional durability, and international quality standards, backed by ISO 9001 certification and FDA-USA and NSF approvals. From cafeterias to leading hospitality establishments, Kenford's lightweight, unbreakable, stain-resistant, and microwave-safe solutions deliver the perfect balance of performance, safety, and value. Driven by excellence and customer trust, Kenford continues to set benchmarks in quality while shaping the future of modern hospitality and food service.",
+  },
   // --- temporarily hidden (uncomment to restore) ---
   // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy",
   //   text: "A brand of tradition and innovation, Elle & Vire Professionnel has catered to the finest chefs and emerging talents for over 75 years, showcasing excellence in dairy from Normandy. The consistency and performance of its creams and butters empower chefs in their pursuit of excellence." },
