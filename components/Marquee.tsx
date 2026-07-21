@@ -25,7 +25,7 @@ function Row() {
 
 export default function Marquee() {
   return (
-    <section id="marquee" className="overflow-hidden border-y border-paper/10 bg-pine-deep py-7">
+    <section id="marquee" className="overflow-hidden border-y border-paper/10 bg-gold py-7">
       <div className="flex w-max animate-marquee">
         <Row />
         <Row />

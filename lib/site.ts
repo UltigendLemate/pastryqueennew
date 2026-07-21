@@ -260,11 +260,31 @@ export const JURY = [
     img: "/jury/ankit.jpg",
     bio: "Ankit Sahni is the Founder and CEO of The Hazelnut Factory, a premium café, specialty coffee, patisserie and artisanal mithai brand founded in 2019. Under his leadership, THF has expanded to 22 outlets across 10 cities, crossed ₹100 crore in annual revenue in FY 2025-26, and built a modern Indian dessert identity through premium mithai, gifting, retail products and specialty coffee.",
   },
+  {
+    name: "Chef Gauri",
+    role: "Founder, Confect",
+    img: "/jury/gauri.jpg",
+    bio: "Chef Gauri is the Founder of Confect, India’s first premium confectionery decor brand. Starting without legacy funding or a ready market, she built Confect into a trusted name for cake toppers, edible glitters, sprinkles and customized decor. Featured on Shark Tank India Season 4, she has helped bakers, chefs and home entrepreneurs access safe, aesthetic and globally benchmarked dessert decor products.",
+  },
 ];
 
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
 // (shown when a sponsor is opened). Descriptions sourced from the original site.
 export const SPONSORS = [
+  {
+    name: "Valrhona",
+    logo: "/sponsors/valrhona.png",
+    link: "https://www.valrhona.com/en/our-products/for-professionals/chocolate-co",
+    tag: "Together, good becomes better",
+    text: "Founded in 1922, Valrhona is one of the world's leading premium chocolate brands, inspiring pastry chefs and artisans through exceptional craftsmanship, innovation, and sustainability. Guided by its purpose, \"Together, Good Becomes Better,\" Valrhona works closely with cocoa producers to ensure complete traceability while supporting responsible sourcing and protecting both people and the planet.\n\nThis year, Valrhona proudly celebrates the 40th anniversary of Guanaja, the world's first 70% dark chocolate blend. Renowned for its complex aromatic profile and pioneering craftsmanship, Guanaja has become an iconic benchmark in premium chocolate, empowering chefs worldwide to create distinctive desserts and unforgettable experiences.\n\nIn India, Valrhona is proudly represented by Eurofoods, its official distribution partner, ensuring product availability, and dedicated customer support for hotels, restaurants, bakeries, and pastry professionals across the country. Together, Valrhona and Eurofoods are committed to elevating India's pastry landscape by bringing world-class chocolate, expertise, and inspiration closer to culinary professionals.",
+  },
+  {
+    name: "Euro Foods",
+    logo: "/sponsors/euro.png",
+    link: "https://eurofoods.co.in",
+    tag: "Euro Foods joins as sponsor",
+    text: "Euro Foods joins as sponsor.",
+  },
   {
     name: "Anupam Royals",
     logo: "/sponsors/anupam_logo.jpg",

@@ -1,25 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { Reveal, Words } from "./Reveal";
 import { SPONSORS } from "@/lib/site";
-
-const EASE = [0.16, 1, 0.3, 1] as const;
+import { useSponsorDialog } from "./SponsorDialogProvider";
 
 export default function Sponsors() {
-  const [active, setActive] = useState<number | null>(null);
-  const s = active != null ? SPONSORS[active] : null;
-
-  useEffect(() => {
-    document.body.style.overflow = s ? "hidden" : "";
-  }, [s]);
-
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setActive(null);
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  const { open } = useSponsorDialog();
 
   return (
     <section id="sponsors" className="cv bg-ivory py-24 md:py-32">
@@ -48,7 +34,7 @@ export default function Sponsors() {
           {SPONSORS.map((sp, i) => (
             <Reveal key={sp.name} delay={(i % 3) * 0.06}>
               <button
-                onClick={() => setActive(i)}
+                onClick={() => open(sp)}
                 className="group flex h-full w-full flex-col rounded-xl border border-pine/10 bg-white p-6 text-left transition-all duration-500 ease-editorial hover:-translate-y-1 hover:border-gold/40 hover:shadow-[0_24px_50px_-28px_rgba(42,59,59,0.4)] md:p-8"
               >
                 <div className="flex h-24 items-center justify-center">
@@ -77,61 +63,6 @@ export default function Sponsors() {
           ))}
         </div>
       </div>
-
-      {/* sponsor detail popup */}
-      <AnimatePresence>
-        {s && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            onClick={() => setActive(null)}
-            className="fixed inset-0 z-[2000] flex items-center justify-center bg-pine-deep/70 p-5 backdrop-blur-md"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.97 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 20, scale: 0.98 }}
-              transition={{ duration: 0.45, ease: EASE }}
-              onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-xl overflow-hidden rounded-2xl bg-paper p-8 md:p-10"
-            >
-              <div className="flex items-center gap-5 border-b border-pine/10 pb-6">
-                <div className="flex h-20 w-28 shrink-0 items-center justify-center rounded-xl border border-pine/10 bg-white p-3">
-                  <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain" />
-                </div>
-                <div>
-                  <div className="eyebrow text-gold-deep">{s.tag}</div>
-                  <h3 className="display mt-1.5 text-2xl text-pine md:text-3xl">{s.name}</h3>
-                </div>
-              </div>
-
-              <p className="mt-6 max-h-[40vh] overflow-y-auto leading-relaxed text-pine/80">{s.text}</p>
-
-              {s.link && (
-                <a
-                  href={s.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group mt-7 inline-flex items-center gap-2.5 rounded-full bg-pine px-7 py-3.5 text-sm font-semibold text-paper transition-colors hover:bg-gold-deep"
-                >
-                  Visit website
-                  <span className="transition-transform duration-300 group-hover:translate-x-0.5">↗</span>
-                </a>
-              )}
-
-              <button
-                onClick={() => setActive(null)}
-                aria-label="Close"
-                className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-pine text-paper transition-colors hover:bg-gold-deep"
-              >
-                ✕
-              </button>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

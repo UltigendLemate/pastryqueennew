@@ -13,7 +13,7 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useReducedMotion } from "framer-motion";
 import * as THREE from "three";
 
-const PALETTE = ["#bf4a7a", "#d9b779", "#c46f99", "#9a6e34", "#e0a9c2"];
+const PALETTE = ["#bf4a7a", "#ed6fae", "#c46f99", "#a30c57", "#e0a9c2"];
 const IMG_RATIO = 0.69; // tight-cropped bird.webp aspect (w/h)
 
 /* ----------------------------- glisten shader ----------------------------- */
@@ -167,7 +167,7 @@ function Motes() {
     }
     const geo = new THREE.BufferGeometry();
     geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-    const mat = new THREE.PointsMaterial({ color: "#d9b779", size: 0.05, transparent: true, opacity: 0.55 });
+    const mat = new THREE.PointsMaterial({ color: "#ed6fae", size: 0.05, transparent: true, opacity: 0.55 });
     return { geo, mat };
   }, []);
   useFrame((state, delta) => {

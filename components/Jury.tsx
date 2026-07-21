@@ -59,7 +59,9 @@ export default function Jury() {
                       alt={j.name}
                       fill
                       sizes="(max-width: 640px) 50vw, 30vw"
-                      className="object-cover object-center transition-transform duration-[1.1s] ease-editorial group-hover:scale-[1.04]"
+                      className={`object-cover transition-transform duration-[1.1s] ease-editorial group-hover:scale-[1.04] ${
+                        j.name === "Chef Gauri" ? "object-top" : "object-center"
+                      }`}
                       style={{ filter: "saturate(0.92) contrast(1.03)" }}
                     />
                   </div>
@@ -108,7 +110,7 @@ export default function Jury() {
                   alt={member.name}
                   fill
                   sizes="(max-width: 640px) 90vw, 40vw"
-                  className="object-cover object-center"
+                  className={`object-cover ${member.name === "Chef Gauri" ? "object-top" : "object-center"}`}
                   style={{ filter: "saturate(0.92) contrast(1.03)" }}
                 />
               </div>

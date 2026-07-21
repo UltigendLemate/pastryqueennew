@@ -6,6 +6,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import ScrollProgress from "@/components/ScrollProgress";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import SponsorDialogProvider from "@/components/SponsorDialogProvider";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -39,12 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${display.variable} ${sans.variable}`}>
       <body>
-        <ScrollProgress />
-        <Nav />
-        <SmoothScroll>
-          <main>{children}</main>
-          <Footer />
-        </SmoothScroll>
+        <SponsorDialogProvider>
+          <ScrollProgress />
+          <Nav />
+          <SmoothScroll>
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
+        </SponsorDialogProvider>
         <Script id="hyperleap-chatbot" strategy="afterInteractive">
           {`(function () {
             window.userChatbotConfig = {

@@ -15,8 +15,8 @@
   --pine: #2a3b3b;
   --pine-deep: #1b2827;
   --teal: #689a9b;
-  --gold: #b8894a;
-  --gold-light: #d9b779;
+  --gold: #dc1076;
+  --gold-light: #ed6fae;
 }
 
 @layer base {
@@ -140,7 +140,7 @@
 
   /* gold ink gradient text */
   .ink-gold {
-    background: linear-gradient(95deg, #9a6e34 0%, #d9b779 45%, #b8894a 100%);
+    background: linear-gradient(95deg, #a30c57 0%, #ed6fae 45%, #dc1076 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

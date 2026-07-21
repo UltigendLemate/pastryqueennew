@@ -87,6 +87,27 @@ export default function Hero() {
 
         {/* ── masthead — vertically centred ── */}
         <div className="my-auto max-w-[44rem]">
+          {/* ── Title sponsor lockup ── */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.05, ease: EASE }}
+            className="pointer-events-auto mb-8 flex w-fit flex-col items-center gap-2 text-center"
+          >
+            <a
+              href="https://www.valrhona.com/en/our-products/for-professionals/chocolate-co"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/sponsors/valrhona.png"
+                alt="Valrhona"
+                className="h-[7rem] w-auto object-contain mix-blend-multiply md:h-[9rem]"
+              />
+            </a>
+            <span className="eyebrow text-pine/45">presents</span>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -115,6 +136,20 @@ export default function Hero() {
             <span className="inline-block h-px w-10 bg-gold" />
             The {SITE.year} theme — “{SITE.theme}”
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.9, ease: EASE }}
+            className="pointer-events-auto mt-6 flex flex-col items-start gap-2"
+          >
+            <span className="eyebrow text-pine/40">Powered&nbsp;by</span>
+            <img
+              src="/sponsors/eurofoods-logo.png"
+              alt="Eurofoods"
+              className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
+            />
+          </motion.div>
         </div>
 
         {/* ── meta bar — horizontal, bottom ── */}

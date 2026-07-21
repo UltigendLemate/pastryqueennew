@@ -25,9 +25,9 @@ const config: Config = {
           deep: "#4E7B7C",
         },
         gold: {
-          DEFAULT: "#B8894A",
-          light: "#D9B779",
-          deep: "#9A6E34",
+          DEFAULT: "#DC1076",
+          light: "#ED6FAE",
+          deep: "#A30C57",
         },
       },
       fontFamily: {
@@ -60,7 +60,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 
 export default config;

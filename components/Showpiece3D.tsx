@@ -48,7 +48,7 @@ function Orbiters() {
       {seeds.map((s, i) => (
         <mesh key={i}>
           <sphereGeometry args={[s.size, 18, 18]} />
-          <meshStandardMaterial color="#d9b779" roughness={0.18} metalness={1} envMapIntensity={1.6} />
+          <meshStandardMaterial color="#ed6fae" roughness={0.18} metalness={1} envMapIntensity={1.6} />
         </mesh>
       ))}
     </group>
@@ -77,7 +77,7 @@ function Showpiece() {
         </mesh>
         <mesh rotation={[Math.PI / 2.5, 0.5, 0]}>
           <torusGeometry args={[1.92, 0.042, 24, isMobile ? 110 : 180]} />
-          <meshStandardMaterial color="#b8894a" roughness={0.22} metalness={1} envMapIntensity={1.5} />
+          <meshStandardMaterial color="#dc1076" roughness={0.22} metalness={1} envMapIntensity={1.5} />
         </mesh>
         <mesh rotation={[Math.PI / 2.1, -0.4, 0.3]}>
           <torusGeometry args={[1.55, 0.012, 12, isMobile ? 110 : 180]} />
@@ -134,7 +134,7 @@ export default function Showpiece3D() {
 
           <Environment resolution={isMobile ? 128 : 256} frames={1}>
             <Lightformer form="rect" intensity={2.2} position={[0, 3, 2]} scale={[7, 7, 1]} color="#fff7ea" />
-            <Lightformer form="rect" intensity={1.3} position={[-4, 1, 2]} scale={[3, 4, 1]} color="#d9b779" />
+            <Lightformer form="rect" intensity={1.3} position={[-4, 1, 2]} scale={[3, 4, 1]} color="#ed6fae" />
             <Lightformer form="circle" intensity={1.1} position={[4, -1, 1]} scale={[3, 3, 1]} color="#8fb6b7" />
             <Lightformer form="rect" intensity={0.7} position={[0, -3, -3]} scale={[6, 6, 1]} color="#f6f1e7" />
           </Environment>
