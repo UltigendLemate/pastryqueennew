@@ -266,6 +266,12 @@ export const JURY = [
     img: "/jury/gauri.jpg",
     bio: "Chef Gauri is the Founder of Confect, India’s first premium confectionery decor brand. Starting without legacy funding or a ready market, she built Confect into a trusted name for cake toppers, edible glitters, sprinkles and customized decor. Featured on Shark Tank India Season 4, she has helped bakers, chefs and home entrepreneurs access safe, aesthetic and globally benchmarked dessert decor products.",
   },
+  {
+    name: "Chef Ramachandra Ganeshan",
+    role: "Executive Pastry Chef, ITC Maurya",
+    img: "/jury/ramachandra.jpg",
+    bio: "Chef Ramachandra Ganeshan is an accomplished Executive Pastry Chef with over 28 years of international experience across luxury hospitality, fine dining and large-scale banquet operations. Currently with ITC Maurya, New Delhi, he leads pastry operations for prestigious events including the G20 Summit, BRICS Summit, PM conferences, Heads of State visits and state banquets for global dignitaries, with expertise in artisan bakery, French pastries, chocolates and luxury desserts.",
+  },
 ];
 
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
