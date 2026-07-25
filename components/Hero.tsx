@@ -145,11 +145,17 @@ export default function Hero() {
           >
             <span className="eyebrow text-pine/40">Powered&nbsp;by</span>
             <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-              <img
-                src="/sponsors/eurofoods-logo.png"
-                alt="Eurofoods"
-                className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
-              />
+              <a
+                href="https://eurofoods.co.in"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/sponsors/eurofoods-logo.png"
+                  alt="Eurofoods"
+                  className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
+                />
+              </a>
               <a
                 href="https://www.elle-et-vire.com/int/en/products/"
                 target="_blank"
