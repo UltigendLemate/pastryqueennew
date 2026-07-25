@@ -150,11 +150,17 @@ export default function Hero() {
                 alt="Eurofoods"
                 className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
               />
-              <img
-                src="/sponsors/ellenwire.png"
-                alt="Elle & Vire Professionnel"
-                className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
-              />
+              <a
+                href="https://www.elle-et-vire.com/int/en/products/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/sponsors/ellenwire.png"
+                  alt="Elle & Vire Professionnel"
+                  className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
+                />
+              </a>
             </div>
           </motion.div>
         </div>
