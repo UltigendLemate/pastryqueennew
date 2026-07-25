@@ -25,8 +25,9 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     };
     raf = requestAnimationFrame(loop);
 
-    // Smooth in-page anchor navigation
+    // Smooth in-page anchor navigation (fallback for links not handled by Nav)
     const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented) return;
       const target = e.target as HTMLElement;
       const a = target.closest('a[href^="#"]') as HTMLAnchorElement | null;
       if (!a) return;

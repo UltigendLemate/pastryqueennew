@@ -1,8 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { SITE, NAV } from "@/lib/site";
+import type Lenis from "lenis";
+
+function scrollTo(href: string) {
+  if (href.length <= 1) return;
+  const el = document.querySelector(href);
+  if (!el) return;
+  const lenis = (window as unknown as { lenis?: Lenis }).lenis;
+  if (lenis) lenis.scrollTo(el as HTMLElement, { offset: -72, duration: 1.4 });
+}
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,8 +25,13 @@ export default function Nav() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    document.documentElement.style.overflow = open ? "hidden" : "";
   }, [open]);
+
+  const handleNav = useCallback((href: string) => {
+    setOpen(false);
+    scrollTo(href);
+  }, []);
 
   return (
     <>
@@ -48,6 +62,7 @@ export default function Nav() {
               <li key={n.href}>
                 <a
                   href={n.href}
+                  onClick={(e) => { e.preventDefault(); scrollTo(n.href); }}
                   className="link-underline text-[0.92rem] font-medium text-pine/80 hover:text-pine"
                 >
                   {n.label}
@@ -109,7 +124,7 @@ export default function Nav() {
                 >
                   <a
                     href={n.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(e) => { e.preventDefault(); handleNav(n.href); }}
                     className="display block py-1 text-5xl text-pine"
                   >
                     {n.label}

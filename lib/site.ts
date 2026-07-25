@@ -288,8 +288,8 @@ export const SPONSORS = [
     name: "Euro Foods",
     logo: "/sponsors/euro.png",
     link: "https://eurofoods.co.in",
-    tag: "Euro Foods joins as sponsor",
-    text: "Euro Foods joins as sponsor.",
+    tag: "19 years of premium pastry ingredients",
+    text: "Great pastry begins with exceptional ingredients, and Euro Foods has spent 19 years making sure India's professional kitchens and pastry makers never have to compromise. As a leading food service distributor and authorised importer of Valrhona, Euro Foods brings the world's finest couverture chocolate range and 100+ premium baking essentials to pastry chefs, chocolatiers, and dessert creators across India. Because behind every remarkable creation is a partner who cares as deeply about craft as the chef does.",
   },
   {
     name: "Elle & Vire Professionnel",
