@@ -292,6 +292,13 @@ export const SPONSORS = [
     text: "Euro Foods joins as sponsor.",
   },
   {
+    name: "Elle & Vire Professionnel",
+    logo: "/sponsors/ellenwire.png",
+    link: "https://savencia-fd.in",
+    tag: "Premium Normandy dairy",
+    text: "Celebrating over 80 years of French dairy excellence, Elle & Vire Professionnel is the preferred choice of pastry professionals worldwide. Its iconic 35% Excellence Whipping Cream and 82% Extra Dry Butter are trusted for their superior performance, consistency, and rich flavor, enabling chefs to craft exceptional desserts with confidence.",
+  },
+  {
     name: "Anupam Royals",
     logo: "/sponsors/anupam_logo.jpg",
     link: "https://www.anupamroyals.com/",

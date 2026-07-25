@@ -152,7 +152,7 @@ export default function Hero() {
               />
               <img
                 src="/sponsors/ellenwire.png"
-                alt="Ellenwire"
+                alt="Elle & Vire Professionnel"
                 className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
               />
             </div>
