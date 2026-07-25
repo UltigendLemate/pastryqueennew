@@ -141,14 +141,21 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.9, ease: EASE }}
-            className="pointer-events-auto mt-6 flex flex-col items-start gap-2"
+            className="pointer-events-auto mt-6 flex flex-col items-start gap-3"
           >
             <span className="eyebrow text-pine/40">Powered&nbsp;by</span>
-            <img
-              src="/sponsors/eurofoods-logo.png"
-              alt="Eurofoods"
-              className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
-            />
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+              <img
+                src="/sponsors/eurofoods-logo.png"
+                alt="Eurofoods"
+                className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
+              />
+              <img
+                src="/sponsors/ellenwire.png"
+                alt="Ellenwire"
+                className="h-[6.5rem] w-auto object-contain mix-blend-multiply md:h-[8rem]"
+              />
+            </div>
           </motion.div>
         </div>
 
