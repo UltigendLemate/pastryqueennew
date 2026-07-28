@@ -272,6 +272,12 @@ export const JURY = [
     img: "/jury/ramachandra.jpg",
     bio: "Chef Ramachandra Ganeshan is an accomplished Executive Pastry Chef with over 28 years of international experience across luxury hospitality, fine dining and large-scale banquet operations. Currently with ITC Maurya, New Delhi, he leads pastry operations for prestigious events including the G20 Summit, BRICS Summit, PM conferences, Heads of State visits and state banquets for global dignitaries, with expertise in artisan bakery, French pastries, chocolates and luxury desserts.",
   },
+  {
+    name: "Raminder Bakshi",
+    role: "Founder, The Art Culinnaire & The Baking Lab",
+    img: "/jury/raminder.jpg",
+    bio: "Raminder Bakshi is a seasoned culinary professional, hospitality strategist and entrepreneur with over three decades of experience across India, Egypt, Dubai and London. He began his career with the Hilton Group and later worked with Hyatt International at properties including Grand Hyatt and Hyatt Regency Delhi. His professional journey spans culinary operations, food-service management, business development and hospitality consulting. He is the founder of The Art Culinnaire and The Baking Lab, offering end-to-end solutions for restaurants, hotels, patisserie bistro and catering ventures. As a jury member for Pastry Queen India, he brings operational expertise, refined culinary judgement and a strong commitment to mentoring talent.",
+  },
 ];
 
 // Partners & sponsors — logo, website link, short tag, and an "about" blurb
@@ -360,6 +366,12 @@ export const SPONSORS = [
     link: "https://kenford.in",
     tag: "Polycarbonate & melamine food service",
     text: "Since 2009, Kenford has been redefining food service with its premium range of food-grade polycarbonate and melamine products. Proudly made in India, the brand combines innovative design, exceptional durability, and international quality standards, backed by ISO 9001 certification and FDA-USA and NSF approvals. From cafeterias to leading hospitality establishments, Kenford's lightweight, unbreakable, stain-resistant, and microwave-safe solutions deliver the perfect balance of performance, safety, and value. Driven by excellence and customer trust, Kenford continues to set benchmarks in quality while shaping the future of modern hospitality and food service.",
+  },
+  {
+    name: "PTC Punjabi",
+    logo: "/sponsors/ptc-punjabi.png",
+    tag: "Telecast Partner",
+    text: "PTC Punjabi is our official telecast partner, bringing Pastry Queen India to households across Punjab and beyond.",
   },
   // --- temporarily hidden (uncomment to restore) ---
   // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy",
