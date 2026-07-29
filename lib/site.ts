@@ -370,8 +370,9 @@ export const SPONSORS = [
   {
     name: "PTC Punjabi",
     logo: "/sponsors/ptc-punjabi.png",
-    tag: "Telecast Partner",
-    text: "PTC Punjabi is our official telecast partner, bringing Pastry Queen India to households across Punjab and beyond.",
+    link: "https://www.ptcpunjabi.co.in/",
+    tag: "Media Partner",
+    text: "PTC Punjabi is our official media partner, bringing Pastry Queen India to households across Punjab and beyond.",
   },
   // --- temporarily hidden (uncomment to restore) ---
   // { name: "Elle & Vire Professionnel", logo: "/pp/elle.png", link: "https://savencia-fd.in", tag: "Premium Normandy dairy",
