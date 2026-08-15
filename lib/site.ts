@@ -23,7 +23,16 @@ export const SITE = {
   visitorUrl: "https://ihexpo.com/visitor-registration/",
 } as const;
 
+// The winner of the current edition — announced once the competition concludes.
+export const WINNER = {
+  name: "Tisha Nair",
+  team: "Ecole Ducasse ISH, Gurugram",
+  img: "/winner/tisha-nair.jpg",
+  title: "Pastry Queen India 2026",
+};
+
 export const NAV = [
+  { label: "Winner", href: "#winner" },
   { label: "The Event", href: "#story" },
   { label: "The Challenge", href: "#challenge" },
   { label: "The Chefs", href: "#participants" },
@@ -196,7 +205,8 @@ export const PARTICIPANTS = [
     logo: "/images/pi/ishlogo.jpeg",
     img: "/contestants/tisha.jpg",
     bigLogo: true,
-    bio: "A trained pastry chef with experience in bakery, dessert production, showpieces and competition work. Trained at the Academy of Pastry & Culinary Arts, she has worked with The Sugar Project and the Indian School of Hospitality. A multiple ICC medallist, she won Best Glass Dessert at the Junior Pastry Cup 2025.",
+    winner: true,
+    bio: "Winner of Pastry Queen India 2026. A trained pastry chef with experience in bakery, dessert production, showpieces and competition work. Trained at the Academy of Pastry & Culinary Arts, she has worked with The Sugar Project and the Indian School of Hospitality. A multiple ICC medallist, she won Best Glass Dessert at the Junior Pastry Cup 2025.",
   },
   {
     name: "Akankhya Garabadu",
