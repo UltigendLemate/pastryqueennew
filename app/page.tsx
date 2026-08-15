@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Winner from "@/components/Winner";
 import Marquee from "@/components/Marquee";
 import Story from "@/components/Story";
 import Challenge from "@/components/Challenge";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Winner />
       <Marquee />
       <Story />
       <Challenge />
