@@ -12,7 +12,7 @@ export const SITE = {
   venue: "India Expo Centre & Mart",
   city: "Greater Noida, NCR, India",
   host: "IHE Expo 2026",
-  organisedBy: "Bakery Review",
+  organisedBy: "tanishq",
   registerDeadline: "31 May 2026",
   registerEmail: "hammermmservices@gmail.com",
   recapEmbed: "https://www.youtube.com/embed/6qsrNp3FZ8s?si=lp5xqucw3aUcPdQP&rel=0",
